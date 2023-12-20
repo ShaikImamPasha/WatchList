@@ -1,0 +1,65 @@
+npx craete-react-app 
+creat-react-app  => package (using npx to execute this package)
+
+after run the cmd and got the error then run this beolw cmd:- 
+S C:\Users\HP\Desktop\YtClone> npx create-react-app play_list
+npm ERR! code ENOENT
+npm ERR! syscall lstat
+npm ERR! path C:\Users\HP\AppData\Roaming\npm
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, lstat 'C:\Users\HP\AppData\Roaming\npm'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm install -g npm 
+
+instaling tailwindcss:- 
+1.npm i - D tailwindcss (for install the taileindss_module)
+2.npx tailwindcss init(create tailwind.config.js) 
+
+instaling readux-toolkit:-
+npm i @reduxjs/toolkit
+also react-redux need so install the :- 
+npm i react-redux
+-create store(configuration)
+-create slice(ex card slice)
+-provide to app(provider to main parent cmpt)
+-use Reducers using useDispatch 
+-subscribe values in store using useSelector
+
+for Youtube api'S 
+search-youtube api keys 
+for api keys:-
+youtube api keys auth
+
+instaling react-router-dom 
+-npm install react-router-dom;
+-use creatBrowserRouter for router configuration 
+-use RouterProvider for apply this confighuration to our app.
+-note:-useParames() are used for only "/" values.ex:- /:id .it is not apply to /watch?v=20 
+
+
+Debouncing:- 
+- perfomance
+search iphone 14 pro max without  Debouncing (with fast type then it call every word for call api.but in normal slow mode type it call every word)
+    --here problem is if 1000+peoples search word then 10000 * wordes count apis.(10000)
+search iphone 14 pro max with Debouncing (with fast type then it call only off of the api calles.but here also in normal slow mode call the apis for every words)
+   --so if 1000+peoples search word then 10000 * wordes off count apis(5000 api calles).
+  
+Debouncing with 200ms 
+- if difference between 2 key strokes is <200 ms- decline api call 
+- 200 ms make an api call
+
+-applyed catche for not again call that api
+-applyed lru catch using localStorage 
+-applying nested commentes using recursion
+
+
+Live chart:- 
+-get live data 
+-update the ui 
+Data(Live):- 
+  1->using web sockets (it is bi-direaction data.backend-><-fontend sending data at parallere.there is no intervel.)(ex-waht's app,stock_markets,circket_live_data)
+  2->Api Polling(it is one diraection and contains regulare interval)(ex-gmail)
+
+
